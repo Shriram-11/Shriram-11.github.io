@@ -2,7 +2,7 @@
 <html lang="zxx">
   <head>
     <meta charset="utf-8" />
-    <title>Portfolio Template</title>
+    <title>Home</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -75,7 +75,7 @@
             <h1 class="text-white font-tertiary">
               Hi! I’m <br />
               Shriram <br />
-              <span id="role"></span>
+              <span id="role" class="role-text"></span>
             </h1>
           </div>
 
@@ -87,13 +87,17 @@
               overflow: hidden;
             }
             .role-text {
-              font-size: 0.1em; /* Adjust this value for smaller text */
+              font-size: 0.7em; /* Adjust this value for smaller text */
               color: white; /* You can change this if needed */
             }
           </style>
 
           <script>
-            const roles = ["Python Developer", "Data Scientist"];
+            const roles = [
+              "Python Developer",
+              "Data Scientist",
+              "Machine Learning Engineer",
+            ];
             let currentIndex = 0;
             let currentCharIndex = 0;
             const typingSpeed = 150; // Speed of typing effect
@@ -188,10 +192,10 @@
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
             <p class="font-secondary paragraph-lg text-dark">
-              CS student with a flair for Python development, specializing in
-              frameworks like Flask and Django. 🐍 Passionate about data science
-              and machine learning. 🚀 Hackathon winner. Always curious, always
-              coding. 💻.
+              Computer Science grad student with a flair for Python development,
+              specializing in frameworks like Flask and Django. 🐍 Passionate
+              about data science and machine learning. 🚀 Hackathon winner.
+              Always curious, always coding. 💻.
             </p>
             <a href="about.html" class="btn btn-transparent">know more</a>
           </div>
@@ -267,148 +271,6 @@
       />
     </section>
     <!-- /education -->
-
-    <!-- services -->
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="section-title">Services</h2>
-          </div>
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="card hover-shadow shadow">
-              <div class="card-body text-center px-4 py-5">
-                <i class="ti-palette icon mb-5 d-inline-block"></i>
-                <h4 class="mb-4">UI Design</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="card active-bg-primary hover-shadow shadow">
-              <div class="card-body text-center px-4 py-5">
-                <i class="ti-vector icon mb-5 d-inline-block"></i>
-                <h4 class="mb-4">UX Design</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="card hover-shadow shadow">
-              <div class="card-body text-center px-4 py-5">
-                <i class="ti-panel icon mb-5 d-inline-block"></i>
-                <h4 class="mb-4">Interaction Design</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /services -->
-
-    <!-- portfolio -->
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="section-title">Portfolio</h2>
-          </div>
-        </div>
-        <div class="row shuffle-wrapper">
-          <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img
-                src="images/portfolio/item-1.png"
-                alt="portfolio-image"
-                class="img-fluid rounded w-100"
-              />
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="project-single.html"
-                    >view project</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img
-                src="images/portfolio/item-2.png"
-                alt="portfolio-image"
-                class="img-fluid rounded w-100"
-              />
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="project-single.html"
-                    >view project</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img
-                src="images/portfolio/item-3.png"
-                alt="portfolio-image"
-                class="img-fluid rounded w-100"
-              />
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="project-single.html"
-                    >view project</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img
-                src="images/portfolio/item-4.png"
-                alt="portfolio-image"
-                class="img-fluid rounded w-100"
-              />
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="project-single.html"
-                    >view project</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img
-                src="images/portfolio/item-5.png"
-                alt="portfolio-image"
-                class="img-fluid rounded w-100"
-              />
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="project-single.html"
-                    >view project</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /portfolio -->
     <!-- blog -->
     <section class="section">
       <div class="container">
@@ -426,12 +288,14 @@
               <div class="card-body">
                 <h4 class="card-title">
                   <a class="text-dark" href="blog-single.html"
-                    >Amazon increase income 1.5 Million</a
+                    >Python Virtual Environments: Installation & Setup
+                    Simplified</a
                   >
                 </h4>
                 <p class="cars-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  In this blog, I explain how to easily install and set up
+                  Python virtual environments, helping you manage your projects
+                  and dependencies more effectively.
                 </p>
                 <a href="blog-single.html" class="btn btn-xs btn-primary"
                   >Read More</a
@@ -449,14 +313,16 @@
               <div class="card-body">
                 <h4 class="card-title">
                   <a class="text-dark" href="blog-single.html"
-                    >Amazon increase income 1.5 Million</a
+                    >Git Yourself Together: A Guide to Basic Git Commands</a
                   >
                 </h4>
                 <p class="cars-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Learn about essential Git commands to help you get organized
+                  and effectively manage your code versioning.
                 </p>
-                <a href="blog-single.html" class="btn btn-xs btn-primary"
+                <a
+                  href="https://medium.com/@nshriram1326/python-virtual-environments-installation-setup-simplified-2d5d3dc326c1"
+                  class="btn btn-xs btn-primary"
                   >Read More</a
                 >
               </div>
@@ -471,15 +337,19 @@
               />
               <div class="card-body">
                 <h4 class="card-title">
-                  <a class="text-dark" href="blog-single.html"
-                    >Amazon increase income 1.5 Million</a
+                  <a
+                    class="text-dark"
+                    href="https://medium.com/@nshriram1326/git-yourself-together-a-guide-to-basic-git-commands-45366197c0f5"
+                    >Accessing files of a remote device using telnet</a
                   >
                 </h4>
                 <p class="cars-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  A step-by-step guide on how to use Telnet to access and manage
+                  files on a remote device.
                 </p>
-                <a href="blog-single.html" class="btn btn-xs btn-primary"
+                <a
+                  href="https://medium.com/@nshriram1326/accessing-files-of-a-remote-device-using-telnet-a08812619e38"
+                  class="btn btn-xs btn-primary"
                   >Read More</a
                 >
               </div>
@@ -503,7 +373,23 @@
           <div class="col-lg-8 mx-auto">
             <div class="bg-white rounded text-center p-5 shadow-down">
               <h4 class="mb-80">Contact Form</h4>
-              <form action="#" class="row">
+              <!-- Use Web3Forms API with your Access Key -->
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="row"
+              >
+                <!-- Web3Forms Access Key -->
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="b1b1ac52-68aa-42d7-9e93-75424feb9787"
+                />
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" style="display: none" />
+
+                <!-- Form Fields -->
                 <div class="col-md-6">
                   <input
                     type="text"
@@ -511,6 +397,7 @@
                     name="name"
                     placeholder="Full Name"
                     class="form-control px-0 mb-4"
+                    required
                   />
                 </div>
                 <div class="col-md-6">
@@ -520,6 +407,7 @@
                     name="email"
                     placeholder="Email Address"
                     class="form-control px-0 mb-4"
+                    required
                   />
                 </div>
                 <div class="col-12">
@@ -528,10 +416,17 @@
                     id="message"
                     class="form-control px-0 mb-4"
                     placeholder="Type Message Here"
+                    required
                   ></textarea>
                 </div>
+
+                <!-- Custom Redirect (Optional) -->
+                <!-- <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html"> -->
+
                 <div class="col-lg-6 col-10 mx-auto">
-                  <button class="btn btn-primary w-100">send</button>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Send
+                  </button>
                 </div>
               </form>
             </div>
@@ -539,6 +434,7 @@
         </div>
       </div>
     </section>
+
     <!-- /contact -->
 
     <!-- footer -->
@@ -549,7 +445,7 @@
             <div class="col-md-4">
               <h5 class="text-light">Email</h5>
               <p class="text-white paragraph-lg font-secondary">
-                steve.fruits@email.com
+                nshriram1326@gmail.com
               </p>
             </div>
             <div class="col-md-4">
