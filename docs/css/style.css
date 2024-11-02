@@ -847,6 +847,8 @@ blockquote {
 
 .page-title {
   padding: 250px 0 150px;
+  position: relative;
+  overflow: hidden;
 }
 
 .page-title .container {
