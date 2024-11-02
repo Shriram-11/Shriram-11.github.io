@@ -909,4 +909,111 @@ blockquote {
   font-weight: bold;
 }
 
+/* Improved styling for the Technical Skills list */
+.about-list {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 30px; /* Space for custom icon */
+  margin-bottom: 12px;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 500; /* Adds emphasis to text */
+}
+
+.about-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%; /* Circle bullet */
+  background-color: #007bff; /* Custom color to match theme */
+}
+
+.about-list li:hover {
+  color: #0056b3; /* Change text color on hover for interaction */
+}
+
+.about-list li:hover::before {
+  background-color: #0056b3; /* Change icon color on hover */
+}
+
+/* Skills List */
+.skills-list {
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  padding: 0;
+  font-size: 20px;  /* Larger font size */
+  color: #333;
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+.skills-list li {
+  padding: 12px 0;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid #e0e0e0; /* Subtle divider */
+}
+
+.skills-list li:last-child {
+  border-bottom: none;
+}
+
+.skills-list span {
+  font-weight: 600; /* Bold labels */
+  margin-right: 10px;
+  color: #444;
+}
+
+/* Adjust font size for the 'About Me' section */
+.about-me {
+  font-size: 1.2em; /* Adjust this as needed; try 1.1em, 1.2em, or 1.3em */
+  line-height: 1.6; /* Increase line height slightly for readability */
+  font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+}
+
+.btn-resume {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 35px; /* Increased padding */
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; /* Slightly larger font size */
+  color: #ffffff;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to Blue Gradient */
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-resume:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icon img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
 /*# sourceMappingURL=maps/style.css.map */
