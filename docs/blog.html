@@ -2,7 +2,7 @@
 <html lang="zxx">
   <head>
     <meta charset="utf-8" />
-    <title>Home</title>
+    <title>blog-single</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -67,210 +67,54 @@
       </nav>
     </header>
 
-    <!-- hero area -->
-    <section class="hero-area bg-primary" id="parallax">
+    <!-- page title -->
+    <section class="page-title bg-primary position-relative">
       <div class="container">
         <div class="row">
-          <div class="col-lg-11 mx-auto">
-            <h1 class="text-white font-tertiary">
-              Hi! I’m <br />
-              Shriram <br />
-              <span id="role" class="role-text"></span>
-            </h1>
-          </div>
-
-          <style>
-            #role {
-              display: inline-block;
-              border-right: 2px solid white; /* Cursor effect */
-              white-space: nowrap;
-              overflow: hidden;
-            }
-            .role-text {
-              font-size: 0.7em; /* Adjust this value for smaller text */
-              color: white; /* You can change this if needed */
-            }
-          </style>
-
-          <script>
-            const roles = [
-              "Python Developer",
-              "Data Scientist",
-              "Machine Learning Engineer",
-            ];
-            let currentIndex = 0;
-            let currentCharIndex = 0;
-            const typingSpeed = 150; // Speed of typing effect
-            const deletingSpeed = 75; // Speed of deleting effect
-            const pauseTime = 1000; // Pause before starting next role
-
-            function typeRole() {
-              const role = roles[currentIndex];
-              if (currentCharIndex < role.length) {
-                document.getElementById("role").textContent +=
-                  role.charAt(currentCharIndex);
-                currentCharIndex++;
-                setTimeout(typeRole, typingSpeed);
-              } else {
-                setTimeout(deleteRole, pauseTime);
-              }
-            }
-
-            function deleteRole() {
-              const role = roles[currentIndex];
-              if (currentCharIndex > 0) {
-                document.getElementById("role").textContent = role.substring(
-                  0,
-                  currentCharIndex - 1
-                );
-                currentCharIndex--;
-                setTimeout(deleteRole, deletingSpeed);
-              } else {
-                currentIndex = (currentIndex + 1) % roles.length;
-                setTimeout(typeRole, pauseTime);
-              }
-            }
-
-            // Start the typing effect
-            typeRole();
-          </script>
-        </div>
-      </div>
-      <div class="layer-bg w-100">
-        <img
-          class="img-fluid w-100"
-          src="images/illustrations/leaf-bg.png"
-          alt="bg-shape"
-        />
-      </div>
-      <div class="layer" id="l2">
-        <img src="images/illustrations/dots-cyan.png" alt="bg-shape" />
-      </div>
-      <div class="layer" id="l3">
-        <img src="images/illustrations/leaf-orange.png" alt="bg-shape" />
-      </div>
-      <div class="layer" id="l4">
-        <img src="images/illustrations/dots-orange.png" alt="bg-shape" />
-      </div>
-      <div class="layer" id="l5">
-        <img src="images/illustrations/leaf-yellow.png" alt="bg-shape" />
-      </div>
-      <div class="layer" id="l6">
-        <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" />
-      </div>
-      <div class="layer" id="l7">
-        <img src="images/illustrations/dots-group-orange.png" alt="bg-shape" />
-      </div>
-      <div class="layer" id="l8">
-        <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" />
-      </div>
-      <div class="layer" id="l9">
-        <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape" />
-      </div>
-      <!-- social icon -->
-      <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-        <li class="mb-3">
-          <a class="text-white" href="#"><i class="ti-facebook"></i></a>
-        </li>
-        <li class="mb-3">
-          <a class="text-white" href="#"><i class="ti-instagram"></i></a>
-        </li>
-        <li class="mb-3">
-          <a class="text-white" href="#"><i class="ti-dribbble"></i></a>
-        </li>
-        <li class="mb-3">
-          <a class="text-white" href="#"><i class="ti-twitter"></i></a>
-        </li>
-      </ul>
-      <!-- /social icon -->
-    </section>
-    <!-- /hero area -->
-
-    <!-- about -->
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-            <p class="font-secondary paragraph-lg text-dark">
-              Computer Science grad student with a flair for Python development,
-              specializing in frameworks like Flask and Django. 🐍 Passionate
-              about data science and machine learning. 🚀 Hackathon winner.
-              Always curious, always coding. 💻.
-            </p>
-            <a href="about.html" class="btn btn-transparent">know more</a>
+          <div class="col-12 text-center">
+            <h1 class="text-white font-tertiary">Blogs</h1>
           </div>
         </div>
       </div>
-    </section>
-    <!-- /about -->
-
-    <!-- education -->
-    <section class="section position-relative">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-title">Education</h2>
-          </div>
-          <div class="col-lg-6 col-md-6 mb-80">
-            <div class="d-flex">
-              <div class="mr-lg-5 mr-3">
-                <i
-                  class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"
-                ></i>
-              </div>
-              <div>
-                <p class="text-dark mb-1">2021-2025</p>
-                <h4>
-                  Bachelors of Technology in Computer Science and Engineering
-                </h4>
-                <p class="mb-0 text-light">
-                  KLS Gogte Institute of Technology, Belgaum
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 mb-80">
-            <div class="d-flex">
-              <div class="mr-lg-5 mr-3">
-                <i
-                  class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"
-                ></i>
-              </div>
-              <div>
-                <p class="text-dark mb-1">2021</p>
-                <h4>Class 12th</h4>
-                <p class="mb-0 text-light">
-                  Kendriya Vidyalaya No. 2, Cantt., Belagavi
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 mb-80">
-            <div class="d-flex">
-              <div class="mr-lg-5 mr-3">
-                <i
-                  class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"
-                ></i>
-              </div>
-              <div>
-                <p class="text-dark mb-1">2019</p>
-                <h4>Secondary School Certificate</h4>
-                <p class="mb-0 text-light">
-                  Kendriya Vidyalaya No. 3, Belagavi
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- bg image -->
+      <!-- background shapes -->
       <img
-        class="img-fluid edu-bg-image w-100"
-        src="images/backgrounds/education-bg.png"
-        alt="bg-image"
+        src="images/illustrations/page-title.png"
+        alt="illustrations"
+        class="bg-shape-1 w-100"
+      />
+      <img
+        src="images/illustrations/leaf-pink-round.png"
+        alt="illustrations"
+        class="bg-shape-2"
+      />
+      <img
+        src="images/illustrations/dots-cyan.png"
+        alt="illustrations"
+        class="bg-shape-3"
+      />
+      <img
+        src="images/illustrations/leaf-orange.png"
+        alt="illustrations"
+        class="bg-shape-4"
+      />
+      <img
+        src="images/illustrations/leaf-yellow.png"
+        alt="illustrations"
+        class="bg-shape-5"
+      />
+      <img
+        src="images/illustrations/dots-group-cyan.png"
+        alt="illustrations"
+        class="bg-shape-6"
+      />
+      <img
+        src="images/illustrations/leaf-cyan-lg.png"
+        alt="illustrations"
+        class="bg-shape-7"
       />
     </section>
-    <!-- /education -->
+    <!-- /page title -->
+
     <!-- blog -->
     <section class="section">
       <div class="container">
@@ -360,6 +204,84 @@
     </section>
     <!-- /blog -->
 
+    <!-- clients -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="section-title">My Clients</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="client-logo-slider d-flex align-items-center">
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-1.png"
+                  alt="client-logo"
+              /></a>
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-2.png"
+                  alt="client-logo"
+              /></a>
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-3.png"
+                  alt="client-logo"
+              /></a>
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-4.png"
+                  alt="client-logo"
+              /></a>
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-5.png"
+                  alt="client-logo"
+              /></a>
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-1.png"
+                  alt="client-logo"
+              /></a>
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-2.png"
+                  alt="client-logo"
+              /></a>
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-3.png"
+                  alt="client-logo"
+              /></a>
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-4.png"
+                  alt="client-logo"
+              /></a>
+              <a href="#" class="text-center d-block outline-0 p-4"
+                ><img
+                  class="d-unset img-fluid"
+                  src="images/clients-logo/client-logo-5.png"
+                  alt="client-logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /clients -->
+
     <!-- contact -->
     <section
       class="section section-on-footer"
@@ -434,7 +356,6 @@
         </div>
       </div>
     </section>
-
     <!-- /contact -->
 
     <!-- footer -->
@@ -445,7 +366,7 @@
             <div class="col-md-4">
               <h5 class="text-light">Email</h5>
               <p class="text-white paragraph-lg font-secondary">
-                nshriram1326@gmail.com
+                steve.fruits@email.com
               </p>
             </div>
             <div class="col-md-4">
